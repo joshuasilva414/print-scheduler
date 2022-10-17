@@ -1,13 +1,21 @@
 package com.joshuasilva.scheduler.model;
 
-import java.util.Vector;
+import java.util.ArrayList;
 
 public class Batch {
-    public Vector<Job> jobs;
+    public ArrayList<Job> jobs;
     public JobFamily family;
+
+    @Override
+    public String toString() {
+        return "Batch{" +
+                "jobs=" + jobs +
+                ", family=" + family +
+                '}';
+    }
 
     public Batch(JobFamily family) {
         this.family = family;
-        this.jobs = new Vector<Job>();
+        this.jobs = new ArrayList<Job>();
     }
 }
