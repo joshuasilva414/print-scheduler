@@ -1,4 +1,4 @@
-package com.joshuasilva.scheduler;
+package com.joshuasilva.scheduler.Controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

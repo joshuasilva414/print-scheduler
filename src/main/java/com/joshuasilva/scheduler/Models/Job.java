@@ -1,4 +1,4 @@
-package com.joshuasilva.scheduler.model;
+package com.joshuasilva.scheduler.Models;
 
 import java.util.ArrayList;
 import java.util.Arrays;

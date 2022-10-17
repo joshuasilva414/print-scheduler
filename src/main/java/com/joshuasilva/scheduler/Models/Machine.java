@@ -1,4 +1,4 @@
-package com.joshuasilva.scheduler.model;
+package com.joshuasilva.scheduler.Models;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,6 +11,7 @@ public class Machine {
 
     public Machine(String name, String model) {
         this.name = name;
+        this.model = model;
         this.batchQueue = new ArrayList<Batch>();
         this.constraints = new HashMap<String, String>();
     }
