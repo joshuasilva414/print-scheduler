@@ -5,6 +5,6 @@ module com.joshuasilva.javafxdemo {
     requires org.controlsfx.controls;
     requires org.kordamp.bootstrapfx.core;
 
-    opens com.joshuasilva.javafxdemo to javafx.fxml;
-    exports com.joshuasilva.javafxdemo;
+    opens com.joshuasilva.scheduler to javafx.fxml;
+    exports com.joshuasilva.scheduler;
 }

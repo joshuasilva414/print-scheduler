@@ -1,4 +1,4 @@
-package com.joshuasilva.javafxdemo;
+package com.joshuasilva.scheduler;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 
 
-<VBox xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.joshuasilva.javafxdemo.HelloController">
+<VBox xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.joshuasilva.scheduler.HelloController">
    <children>
       <MenuBar>
         <menus>
