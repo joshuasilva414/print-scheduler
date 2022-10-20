@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.joshuasilva.scheduler.Controllers.MainController">
+   <children>
+      <VBox alignment="CENTER" spacing="20.0">
+          <padding>
+              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+          </padding>
+         <children>
+         
+                         <Label fx:id="welcomeText" />
+             <Button onAction="#onHelloButtonClick" styleClass="test-button" stylesheets="@../Styles/login.css" text="Hello!" />
+         </children>
+      </VBox>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Add">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#onJobButtonClick" text="Job" />
+                <MenuItem mnemonicParsing="false" onAction="#onMachineButtonClick" text="Machine" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
