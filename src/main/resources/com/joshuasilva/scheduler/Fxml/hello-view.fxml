@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.joshuasilva.scheduler.Controllers.*?>
+
+
+<VBox xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.joshuasilva.scheduler.Controllers.HelloController">
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Add">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Job" onAction="#onJobButtonClick"/>
+                <MenuItem mnemonicParsing="false" text="Machine" onAction="#onMachineButtonClick"/>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <VBox alignment="CENTER" spacing="20.0">
+          <padding>
+              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+          </padding>
+      
+          <Label fx:id="welcomeText" />
+          <Button onAction="#onHelloButtonClick" text="Hello!" />
+      </VBox>
+</VBox>

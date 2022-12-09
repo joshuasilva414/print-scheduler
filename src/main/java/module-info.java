@@ -1,4 +1,4 @@
-module com.joshuasilva.javafxdemo {
+module com.joshuasilva.scheduler {
     requires javafx.controls;
     requires javafx.fxml;
 
