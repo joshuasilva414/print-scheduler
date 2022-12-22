@@ -6,7 +6,7 @@
 <?import com.joshuasilva.scheduler.Controllers.*?>
 
 
-<VBox xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.joshuasilva.scheduler.Controllers.HelloController">
+<VBox xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.joshuasilva.scheduler.Controllers.MainController">
       <MenuBar>
         <menus>
           <Menu mnemonicParsing="false" text="Add">

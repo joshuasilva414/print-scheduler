@@ -1,6 +1,7 @@
 package com.joshuasilva.scheduler.Views;
 
 import com.joshuasilva.scheduler.App;
+import com.joshuasilva.scheduler.Controllers.AddMachineController;
 import com.joshuasilva.scheduler.Controllers.ClientController;
 import com.joshuasilva.scheduler.Controllers.SplashController;
 import javafx.fxml.FXML;
@@ -27,6 +28,13 @@ public class ViewFactory {
         FXMLLoader loader = new FXMLLoader(App.class.getResource("Fxml/Client.fxml"));
         ClientController clientController = new ClientController();
         loader.setController(clientController);
+        createStage(loader);
+    }
+
+    public void showAddMachineForm() {
+        FXMLLoader loader = new FXMLLoader(App.class.getResource("Fxml/AddMachineForm.fxml"));
+        AddMachineController addMachineController = new AddMachineController();
+        loader.setController(addMachineController);
         createStage(loader);
     }
 

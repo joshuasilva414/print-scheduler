@@ -13,8 +13,7 @@
               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
           </padding>
          <children>
-         
-                         <Label fx:id="welcomeText" />
+             <Label fx:id="welcomeText" />
              <Button onAction="#onHelloButtonClick" styleClass="test-button" stylesheets="@../Styles/login.css" text="Hello!" />
          </children>
       </VBox>

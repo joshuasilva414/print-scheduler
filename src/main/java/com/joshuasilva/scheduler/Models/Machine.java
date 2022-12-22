@@ -15,4 +15,14 @@ public class Machine {
         this.batchQueue = new ArrayList<Batch>();
         this.constraints = new HashMap<String, String>();
     }
+
+    @Override
+    public String toString() {
+        return "Machine{" +
+                "name='" + name + '\'' +
+                ", model='" + model + '\'' +
+                ", batchQueue=" + batchQueue +
+                ", constraints=" + constraints +
+                '}';
+    }
 }

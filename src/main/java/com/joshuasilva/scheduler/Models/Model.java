@@ -6,8 +6,11 @@ public class Model {
     private static Model model;
     private final ViewFactory viewFactory;
 
+    public Operation op;
+
     private Model() {
         this.viewFactory = new ViewFactory();
+        this.op = new Operation();
     }
 
     public static synchronized Model getInstance() {

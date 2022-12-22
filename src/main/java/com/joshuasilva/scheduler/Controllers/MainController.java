@@ -1,5 +1,6 @@
 package com.joshuasilva.scheduler.Controllers;
 
+import com.joshuasilva.scheduler.Models.Model;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
@@ -7,7 +8,7 @@ import javafx.scene.control.Label;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class HelloController implements Initializable {
+public class MainController implements Initializable {
     @FXML
     public Label welcomeText;
 
@@ -22,12 +23,13 @@ public class HelloController implements Initializable {
     @FXML
     public void onJobButtonClick() {
         // Create job and add to operation
+
         System.out.println("Job added!");
     }
 
     @FXML
     public void onMachineButtonClick() {
         // Create machine and add to operation
-        System.out.println("Machine added!");
+        Model.getInstance().getViewFactory().showAddMachineForm();
     }
 }
