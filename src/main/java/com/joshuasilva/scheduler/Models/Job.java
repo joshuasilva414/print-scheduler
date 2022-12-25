@@ -1,5 +1,7 @@
 package com.joshuasilva.scheduler.Models;
 
+import javafx.collections.ObservableArray;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 

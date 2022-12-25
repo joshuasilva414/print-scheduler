@@ -2,6 +2,7 @@ package com.joshuasilva.scheduler.Controllers;
 
 import com.joshuasilva.scheduler.Models.Machine;
 import com.joshuasilva.scheduler.Models.Model;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -28,7 +29,7 @@ public class AddMachineController implements Initializable {
     public void onSubmit() {
         Machine machine = new Machine(nameTextField.getText(), modelTextField.getText());
         Model.getInstance().op.machines.add(machine);
-        ArrayList<Machine> machines = Model.getInstance().op.machines;
+        ObservableList<Machine> machines = Model.getInstance().op.machines;
         System.out.println("New " + machines.get(machines.size()-1) + " added!");
 
         // Close Form

@@ -1,15 +1,18 @@
 package com.joshuasilva.scheduler.Models;
 
-import java.util.ArrayList;
+import javafx.collections.*;
+import javafx.collections.ObservableList;
+
+import java.util.*;
 
 public class Operation {
     public Schedule schedule;
-    public ArrayList<Machine> machines;
-    public ArrayList<Job> jobs;
+    public ObservableList<Machine> machines;
+    public ObservableList<Job> jobs;
 
     public Operation() {
         this.schedule = new Schedule();
-        this.machines = new ArrayList<Machine>();
-        this.jobs = new ArrayList<Job>();
+        this.machines = FXCollections.observableArrayList();
+        this.jobs = FXCollections.observableArrayList();
     }
 }
